@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import matplotlib
 
 dataset1 = pd.read_csv("Bengaluru_House_Data.csv")
-row = dataset1.iloc[:, :7].values
+
 row = dataset1.drop(["area_type","availability","society", "balcony"], axis = "columns")
 
 
